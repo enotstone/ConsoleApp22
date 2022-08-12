@@ -50,7 +50,7 @@ namespace ConsoleApp22
         }
         static int SumArray(Task<int[]> task)
         {
-            int[] array = task.Result();
+            int[] array = task.Result;
             int Sum = 0;
             for (int i = 0; i < array.Count(); i++)
             {
@@ -61,7 +61,7 @@ namespace ConsoleApp22
         }
         static int MaxMArr(Task<int[]> task)
         {
-            int[] array = task.Result();
+            int[] array = task.Result;
             int MaxV = array.Max();
             Console.WriteLine(MaxV);
             return MaxV;
